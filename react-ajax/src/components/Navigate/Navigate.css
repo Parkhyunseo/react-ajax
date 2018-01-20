@@ -1,0 +1,17 @@
+.Navigate{
+    position: relative;
+    margin-left:10rem;
+    margin-right:10rem;
+}
+
+.ui.button.Navigate-right-button {
+    float: right;
+    margin: 0px;
+}
+
+.Navigate-page-num{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,27 @@
+/*
+    여기서 Warning-wrapper 를 따로 만든 이유는,
+    애니메이션 CSS 코드에서 transform 을 사용하는데,
+    만약에 Warning 클래스와 함께 fadeIn 을 넣어주면,
+    기존의 가운데 정렬을 도와주는 transform 이 풀리기 때문에,
+    가운데 정렬은 Warning-wrapper 에서 하고 
+    애니메이션은 Warning 클래스에서 하게 한 것 입니다.
+*/
+.Warning-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.Warning {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
